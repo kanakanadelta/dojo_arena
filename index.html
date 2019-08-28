@@ -4,9 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./static/style.css">
+  <script src="./lib/jquery-3.4.1.js"></script>
   <title>Dojo Arena</title>
 </head>
 <body>
-  
+  <div id="wrapper">
+    <!-- Menu -->
+    <div id="menu">
+      <!-- Arena Selecct Module -->
+      <div id="arena_select">
+        <h1>Select Arena</h1>
+        <div id="arena_buttons">
+          <div>
+            <button data-bg="./assets/beach.jpg">beach</button>
+            <button data-bg="./assets/earth.jpg">planet</button>
+            <button data-bg="./assets/dojo.jpg">dojo</button>
+          </div>
+          <div>
+            <button data-bg="./assets/forest.jpg">forest</button>
+            <button data-bg="./assets/matrix.jpg">matrix</button>
+            <button data-bg="./assets/snow.jpg">snow</button>
+          </div>
+        </div>
+      </div>
+      <!-- Arena Select Module End -->
+      <!-- Select Players Module -->
+      <div id="select_players">
+        <h1>Select Players</h1>
+        <div id="select_div">
+          <select name="player1" id="player1">
+            <option value="raphael">Raphael</option>
+            <option value="leonardo">Leonardo</option>
+            <option value="donatello">Donatello</option>
+            <option value="michaelAngelo">Michael Angelo</option>
+          </select>
+          <select name="player3" id="player3">
+            <option value="leonardo">Leonardo</option>
+            <option value="donatello">Donatello</option>
+            <option value="michaelAngelo">Michael Angelo</option>
+            <option value="raphael">Raphael</option>
+          </select>
+        </div>
+      </div>
+      <!-- Select Players Module End -->
+    </div>
+    <div id="players">
+      <div class="turtleSelected turtle1">
+        <img src="./assets/raphael.png" alt="">
+      </div>
+      <div class="turtleSelected turtle2">
+        <img src="./assets/leo.png" alt="">
+      </div>
+    </div>
+    <!-- END WRAPPER -->
+  </div>
+  <!-- SCRIPT FILE -->
+  <script src="./static/app.js"></script>
 </body>
 </html>
